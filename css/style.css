@@ -290,6 +290,11 @@ form{
 
 /*Image Slider*/
 
+section#carousel{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
 section#carousel > figure > img{
     display: none;
     margin: 0px auto;
