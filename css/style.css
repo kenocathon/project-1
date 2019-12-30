@@ -1,0 +1,310 @@
+*{
+    padding: 0px;
+    margin: 0px
+}
+
+/* HEADER SECTION*/
+header{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    
+}
+
+
+#logo{
+    display: block;
+    margin: 10px auto;
+}
+
+nav ul{
+   list-style-type: none;
+   overflow: hidden;
+    text-align: center; 
+    
+
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    display: inline-block;
+    font-size: 2em;
+    margin: 10px;
+    padding: 50px 60px;
+    text-decoration: none;
+    background: url("../images/scroll.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*TOP BODY SECTION */
+section.top{
+    background-color: #DAD2D8;
+    padding: 6em 10em;
+}
+
+section.top h1{
+    font-size: 4em;
+    color: #ED2124;
+    padding-left: 20px;
+}
+
+section.about{
+    background-color: #DAD2D8;
+    padding: 6em 0;
+    
+    
+}
+section.about h1{
+    font-size: 4em;
+    color: #ED2124;
+
+}
+section.about p{
+    padding: 2em 20em;
+}
+
+
+.body-heading{
+    padding: 0% 10%;
+}
+
+.top p{
+    padding: 10px 20px;
+    font-size: 1em;
+    width: 80%
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0 15em;
+}
+
+.content-wrapper div{
+    width: 30%;
+    margin: auto;
+
+}
+
+.content-wrapper img{
+    padding: 1%;
+}
+
+.phone{
+    float: right;
+    color: #320D6D; 
+    font-size: 50px;
+    margin-right: 2%;
+}
+
+hr{
+    border: 1px solid #320D6D;
+    margin: 1em 1em 5em 1em;
+    width: 98%;
+}
+
+/*BODY SECTION*/
+
+.body-section{
+    padding: 5% 0%;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.basic-content p{
+    text-align: left;
+    font-size: 150%;
+    width: 500px;
+}
+.basic-content h3{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 1.4em;
+    color: #320D6D;
+}
+
+.btn{
+    
+    background-color: #320D6D;
+    border: none; 
+    border-radius: 5px;
+    color: #DAD2D8;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+.btn a{
+    text-decoration: none;
+    color: #DAD2D8
+}
+
+.light_background{
+    background-color: #DAD2D8;
+
+}
+
+footer{
+    background-color: #242038;
+    height: 400px;
+    color: white;
+}
+footer h2{
+    margin-bottom: 2%;
+    
+}
+footer{
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.bottom{
+    margin-top: 2%;
+}
+
+
+
+.header img{
+   position: relative;
+   width: 60px;
+   height: 50px;
+}
+
+.row-2{
+    margin-top: 50px;
+}
+
+
+.header ul li{
+    list-style: none;
+    
+}
+
+.top:nth-of-type(2){
+    background-color: white;
+}
+ 
+article{
+    text-align: center;
+
+}
+article img{
+    width: 40%;
+    height: 40%;
+}
+
+
+form{
+    box-sizing: border-box;  
+}
+.title{
+    margin-bottom: 1em;
+}
+.contact>h3{
+    margin-bottom: 1em;
+    margin-left: .2em;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.company-info ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+.title{
+    text-align: center;
+}
+
+.title span{
+    color: #ED2124;
+}
+
+.wrapper{
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+    padding: 1em;
+}
+
+.company-info{
+    background-color: #242038;
+    color: #DAD2D8;
+}
+
+.company-info h3, .company-info ul{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact{
+    background-color: #DAD2D8;
+    
+
+}
+
+/* Form Styles*/
+
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 20px;
+}
+
+.contact form .full{
+    grid-column: 1/3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.contact form p{
+    margin: 0;
+}
+.contact form button{
+    background-color: #242038;
+    border: 0;
+    text-transform: uppercase;
+    color: #DAD2D8;
+}
+
+/*Image Slider*/
+
+section#carousel > figure > img{
+    display: none;
+    margin: 0px auto;
+  }
+  section#carousel > figure.visible > img{
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  section#carousel > figure > figcaption{
+    display: none;
+  }
+  section#carousel > figure.visible > figcaption{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
