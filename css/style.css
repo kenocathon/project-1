@@ -25,16 +25,27 @@ body{
 }
 
 h1{
-  font-weight: bold;
+  font-family: "myriad-pro";
+  font-size: 4em;
   color: #ED2124;
 }
 
-h2, h3{
-    font-weight: bold;
+h2{
+  font-family: "myriad-pro";
+  font-size: 4em;
 }
 
+h3{
+  font-family: "myriad-pro";
+  font-size: 2em;
+}
+p{
+  font-family: "Rosario";
+  font-size: 1.5em;
+}
 a{
   font-weight: bold;
+  text-decoration: none;
 }
 a:hover{
   text-decoration: underline;
@@ -68,7 +79,7 @@ ul li{
 }
 nav ul{
     position: absolute;
-    bottom: -110px;
+    bottom: -30px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -80,11 +91,21 @@ nav a{
     color: #000000;
     display: block;
     padding: 50px 70px;
-    margin: 2em 2em 3em 2em;
+    margin: 0 10px;
     background: url(../images/scroll.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
+    font-size: 1.5em;
+}
+
+nav a:hover{
+  background: url(../images/scroll_hoverx2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  text-decoration: none;
+  color: #DAD2D8;
 }
 
 hr{
@@ -102,12 +123,13 @@ footer{
 button{
     margin: 2em;
     border: none;
+    color:  #DAD2D8;
     text-align: center;
     padding: 15px 32px;
     font-size: 18px;
     background-color: #320D6D;
     border-radius: 18px;
-    box-shadow: 2px 2px;
+    box-shadow: 2px 2px #000000;
     
 }
 
@@ -124,6 +146,10 @@ Layout Styles
   margin-bottom: 3em;
   max-width: 1170px;
  
+}
+.container ul{
+  font-family: "Rosario";
+  font-size: 1.5em;
 }
 .center-align{
     text-align: center;
@@ -148,8 +174,11 @@ p.content{
   clear: both;
 }
 .btn{
-    text-decoration: none;
     color: #DAD2D8;
+}
+.btn:hover{
+  color: #414042;
+  text-decoration: none;
 }
 
 .phone{
@@ -190,17 +219,66 @@ section#carousel{
     font-size: 1.5em;
   }
 
+  
+/***************************
+****************************
+Form Styles
+****************************
+***************************/
+.form-group{
+  color: #DAD2D8;
+  max-width: 1000px;
+  margin: 50px auto;
+  box-shadow: 2px 2px 2px 2px #242038;
+  background-color: #414042;
+}
+.form-top{
+  background-color: #242038;
+  margin: 0 auto;
+  width: 100%;
+  height: 250px;
+  padding-top: .5em;
+  border-bottom: 1px solid #000000;
+}
+.contact-header{
+  text-align: center;
+  
+}
+.contact-form{
+ padding: 2em;
+ width: 90%;
+ margin: 0 auto;
+ text-align: center;
+}
+.form-content{
+  background-color: #414042;
+}
+
+.form-fields li{
+  margin: 1em 0;
+ }
+
+ .form-fields input{
+   width: 90%;
+   height: 3em;
+   padding: 1em;
+ }
+ .form-fields textarea{
+   width: 90%;
+   padding: 1em;
+ }
+.contact-form button{
+  width: 90%;
+  }
+  .contact-form button:hover{
+    color: #414042;
+  }
+
   [class*='col-']{
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }
-  /***************************
-****************************
-Form Styles
-****************************
-***************************/
-
 
 @media (min-width: 48em){
   [class*='col-']{
