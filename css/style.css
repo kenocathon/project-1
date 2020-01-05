@@ -228,10 +228,11 @@ Form Styles
 ***************************/
 .form-group{
   color: #DAD2D8;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 50px auto;
   box-shadow: 2px 2px 2px 2px #242038;
-  background-color: #414042;
+  background-color: #998888;
+  border-radius: 10px;
 }
 .form-top{
   background-color: #242038;
@@ -240,6 +241,7 @@ Form Styles
   height: 250px;
   padding-top: .5em;
   border-bottom: 1px solid #000000;
+  border-radius: 10px;
 }
 .contact-header{
   text-align: center;
@@ -251,8 +253,8 @@ Form Styles
  margin: 0 auto;
  text-align: center;
 }
-.form-content{
-  background-color: #414042;
+.contact-form h2{
+  color: #242038;
 }
 
 .form-fields li{
@@ -270,9 +272,12 @@ Form Styles
  }
 .contact-form button{
   width: 90%;
+  background-color: #242038;
+  
   }
   .contact-form button:hover{
-    color: #414042;
+    color: #DAD2D8;
+    background-color: #525D7B;
   }
 
   [class*='col-']{
