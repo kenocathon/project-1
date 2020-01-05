@@ -27,7 +27,7 @@ body{
 h1{
   font-family: "myriad-pro";
   font-size: 4em;
-  color: #ED2124;
+  color: #C61B1E;
 }
 
 h2{
@@ -46,6 +46,7 @@ p{
 a{
   font-weight: bold;
   text-decoration: none;
+  color: #00171F;
 }
 a:hover{
   text-decoration: underline;
@@ -109,7 +110,7 @@ nav a:hover{
 }
 
 hr{
-    border: 1px solid #320D6D;
+    border: 1px solid #525D7B;
     margin-bottom: 3em;
     
 }
@@ -127,7 +128,7 @@ button{
     text-align: center;
     padding: 15px 32px;
     font-size: 18px;
-    background-color: #320D6D;
+    background-color: #525D7B;
     border-radius: 18px;
     box-shadow: 2px 2px #000000;
     
@@ -182,7 +183,7 @@ p.content{
 }
 
 .phone{
-    color: #320D6D;
+    color: #00171F;
     font-size: 2em;
 }
 .text-beside{
@@ -338,7 +339,7 @@ Theme Styles
   background: #DAD2D8; /*BLUE*/
 }
 .background-tertiary {
-  background: #320D6D; /*GREEN*/
+  background: #00171F; /*GREEN*/
 }
 .background-quad{
   background: #242038;
