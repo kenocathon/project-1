@@ -107,6 +107,7 @@ nav a:hover{
   background-size: 100% 100%;
   text-decoration: none;
   color: #DAD2D8;
+  transition-duration: 300ms;
 }
 
 hr{
@@ -241,7 +242,7 @@ Form Styles
   height: 250px;
   padding-top: .5em;
   border-bottom: 1px solid #000000;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0 ;
 }
 .contact-header{
   text-align: center;
@@ -278,6 +279,7 @@ Form Styles
   .contact-form button:hover{
     color: #DAD2D8;
     background-color: #525D7B;
+    cursor: pointer;
   }
 
   [class*='col-']{
