@@ -1,4 +1,4 @@
-slideInterval = 3500;
+slideInterval = 2500;
 var element;
 
 function getFigures(){
