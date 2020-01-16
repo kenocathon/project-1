@@ -1,0 +1,115 @@
+@import "normalize";
+
+/**********************************
+***********************************
+    Variables
+***********************************
+**********************************/
+
+/* Colors */
+$black: #000000;
+$red: #c61b1e;
+$light-color: #dad2d8;
+$gray: #414042;
+$dark-purple: #00171f;
+
+/* Screen Sizes */
+$xs-screens: 48em;
+$small-screens: 52em;
+$medium-screens: 64em;
+$large-screens: 78em;
+
+/**********************************
+***********************************
+    Mixins
+***********************************
+**********************************/
+@mixin xs-screens {
+  @media only screen and (max-width: $xs-screens) {
+    @content;
+  }
+}
+
+@mixin small-screens {
+  @media only screen and (max-width: $small-screens) {
+    @content;
+  }
+}
+
+@mixin medium-screens {
+  @media only screen and (max-width: $medium-screens - 0.0625) {
+    @content;
+  }
+}
+@mixin large-screens {
+  @media only screen and (min-width: $medium-screens) {
+    @content;
+  }
+}
+
+/**********************************
+***********************************
+    Base Styles
+***********************************
+**********************************/
+
+header {
+  width: 100%;
+  background-color: $black;
+  img {
+    width: 6em;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+/**********************************
+***********************************
+    Layout Styles
+***********************************
+**********************************/
+.header-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu-nav {
+  list-style-type: none;
+  position: relative;
+}
+
+.menu-nav li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.menu-nav li:hover {
+}
+.menu-nav li a {
+  color: $light-color;
+  display: block;
+  padding: 1em 2em;
+  transition: all 0.2s ease 0s;
+  @include large-screens() {
+    font-size: 1em;
+  }
+  @include medium-screens() {
+    font-size: 0.8em;
+    padding: 1em 1.5em;
+  }
+  @include small-screens() {
+    display: none;
+  }
+}
+.menu-nav li a:hover {
+  background-color: $gray;
+  border: none;
+  border-radius: 20px;
+}
+.logo {
+  margin-right: auto;
+  padding: 1em 0;
+}
