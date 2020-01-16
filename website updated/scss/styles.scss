@@ -70,6 +70,7 @@ a {
     Layout Styles
 ***********************************
 **********************************/
+/*header section*/
 .header-wrapper {
   width: 90%;
   margin: 0 auto;
@@ -85,8 +86,6 @@ a {
 .menu-nav li {
   display: inline-block;
   margin-left: 1em;
-}
-.menu-nav li:hover {
 }
 .menu-nav li a {
   color: $light-color;
@@ -105,11 +104,91 @@ a {
   }
 }
 .menu-nav li a:hover {
-  background-color: $gray;
+  background-color: $red;
   border: none;
   border-radius: 20px;
 }
 .logo {
   margin-right: auto;
+  padding: 2em 0;
+}
+
+/*hero section*/
+
+.hero {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: black;
+  text-align: center;
+  padding-bottom: 1em;
+  h1 {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    padding: 1em 0;
+  }
+  h2 {
+    color: #fff;
+    padding-bottom: 3em;
+  }
+}
+
+.hero-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0.3;
+}
+
+/*Below Hero Section*/
+
+.under-hero {
+  background: #000;
+  height: 100%;
   padding: 1em 0;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @include small-screens() {
+    flex-direction: column;
+  }
+  .phone-number {
+    color: white;
+  }
+}
+.redbtn {
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 20px;
+  background-color: $red;
+  color: $light-color;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  &:hover {
+    background-color: $gray;
+    border: 1px solid $red;
+  }
+}
+
+/*Main Content*/
+.featured-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5em 0;
+
+  .feature-wrap {
+    flex-basis: 27%;
+    text-align: center;
+  }
+}
+footer {
+  text-align: center;
+  background-color: $gray;
+  color: white;
+  padding: 2.5em;
 }

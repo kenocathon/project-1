@@ -396,6 +396,7 @@ a {
     Layout Styles
 ***********************************
 **********************************/
+/*header section*/
 .header-wrapper {
   width: 90%;
   margin: 0 auto;
@@ -428,10 +429,78 @@ a {
       display: none; } }
 
 .menu-nav li a:hover {
-  background-color: #414042;
+  background-color: #c61b1e;
   border: none;
   border-radius: 20px; }
 
 .logo {
   margin-right: auto;
-  padding: 1em 0; }
+  padding: 2em 0; }
+
+/*hero section*/
+.hero {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: black;
+  text-align: center;
+  padding-bottom: 1em; }
+  .hero h1 {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    padding: 1em 0; }
+  .hero h2 {
+    color: #fff;
+    padding-bottom: 3em; }
+
+.hero-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0.3; }
+
+/*Below Hero Section*/
+.under-hero {
+  background: #000;
+  height: 100%;
+  padding: 1em 0;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  @media only screen and (max-width: 52em) {
+    .under-hero {
+      flex-direction: column; } }
+  .under-hero .phone-number {
+    color: white; }
+
+.redbtn {
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 20px;
+  background-color: #c61b1e;
+  color: #dad2d8;
+  transition: all 0.2s ease 0s;
+  cursor: pointer; }
+  .redbtn:hover {
+    background-color: #414042;
+    border: 1px solid #c61b1e; }
+
+/*Main Content*/
+.featured-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5em 0; }
+  .featured-content .feature-wrap {
+    flex-basis: 27%;
+    text-align: center; }
+
+footer {
+  text-align: center;
+  background-color: #414042;
+  color: white;
+  padding: 2.5em; }
